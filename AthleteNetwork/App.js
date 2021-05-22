@@ -22,9 +22,9 @@ const App = () => {
 
 
   return (
-    <View>
-      <Text>Hello</Text>
-    </View>
+    <SafeAreaView>
+      <Text>Test</Text>
+    </SafeAreaView>
   );
 };
 
