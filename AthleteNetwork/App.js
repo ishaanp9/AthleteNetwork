@@ -1,10 +1,7 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
+//import react-native-vector-icons
+//import bottom tab navigator
+//import material ui
+//import react-native-navigation (go through docs)
 
 import React from 'react';
 
