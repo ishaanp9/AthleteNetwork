@@ -2,6 +2,7 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import LoginScreen from '../screens/LoginScreen';
+import OnboardingSwiper from '../screens/OnboardingSwiper';
 
 
 const Stack = createStackNavigator();
@@ -13,6 +14,13 @@ const Router = props => {
   return (
     <NavigationContainer> 
       <Stack.Navigator>
+      <Stack.Screen
+          name={'Onboarding Swiper'}
+          component={OnboardingSwiper}
+          options={{
+            headerShown: false,
+          }}
+        />
         <Stack.Screen
           name={'Login Screen'}
           component={LoginScreen}
