@@ -4,25 +4,16 @@
 //import react-native-navigation (go through docs)
 
 import React from 'react';
+import { Text, View, SafeAreaView, StyleSheet } from 'react-native';
+import Router from './navigation/router';
 
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-const App = () => {
-
-
+const App = (props) => {
   return (
-    <SafeAreaView>
-      <Text>Test</Text>
-    </SafeAreaView>
+    <>
+      <Router/>
+    </>
   );
 };
 
 export default App;
+
