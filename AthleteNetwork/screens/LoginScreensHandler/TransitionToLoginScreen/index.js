@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import styles from './styles';
 
-const TransitionToLoginScreen = () => {
+const TransitionToLoginScreen = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.topContainer}>

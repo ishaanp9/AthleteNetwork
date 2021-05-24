@@ -1,20 +1,18 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import LoginScreen from '../screens/LoginScreen';
+import LoginScreen from '../screens/LoginScreensHandler/LoginScreen';
+import TransitionToLoginScreen from '../screens/LoginScreensHandler/TransitionToLoginScreen';
 import OnboardingSwiper from '../screens/OnboardingSwiper';
 
 
-// const Stack = createStackNavigator();
+const Stack = createStackNavigator();
 
-// // this holds all the screens that we have and allow us to 
-// // 
-
-const Router = props => {
+const Router = () => {
   return (
     <NavigationContainer> 
       <Stack.Navigator>
-      <Stack.Screen
+        <Stack.Screen
           name={'Onboarding Swiper'}
           component={OnboardingSwiper}
           options={{
@@ -40,4 +38,4 @@ const Router = props => {
   );
 };
 
-// export default Router;
+export default Router;
