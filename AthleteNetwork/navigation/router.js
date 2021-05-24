@@ -5,10 +5,10 @@ import LoginScreen from '../screens/LoginScreen';
 import OnboardingSwiper from '../screens/OnboardingSwiper';
 
 
-const Stack = createStackNavigator();
+// const Stack = createStackNavigator();
 
-// this holds all the screens that we have and allow us to 
-// 
+// // this holds all the screens that we have and allow us to 
+// // 
 
 const Router = props => {
   return (
@@ -40,4 +40,4 @@ const Router = props => {
   );
 };
 
-export default Router;
+// export default Router;
