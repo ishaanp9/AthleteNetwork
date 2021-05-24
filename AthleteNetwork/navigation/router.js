@@ -28,6 +28,13 @@ const Router = props => {
             headerShown: false,
           }}
         />
+        <Stack.Screen
+           name={'Login Transition Screen'}
+           component={TransitionToLoginScreen}
+           options={{
+             headerShown: false,
+           }}
+         />
       </Stack.Navigator>
     </NavigationContainer>
   );
