@@ -2,33 +2,30 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import LoginScreen from '../screens/LoginScreensHandler/LoginScreen';
+import TransitionToLoginScreen from '../screens/LoginScreensHandler/TransitionToLoginScreen';
 import OnboardingSwiper from '../screens/OnboardingSwiper';
 
 
+const Stack = createStackNavigator();
 
-// const Stack = createStackNavigator();
-
-// // this holds all the screens that we have and allow us to 
-// // 
-
-const Router = props => {
+const Router = () => {
   return (
     <NavigationContainer> 
       <Stack.Navigator>
         <Stack.Screen
-            name={'Onboarding Swiper'}
-            component={OnboardingSwiper}
-            options={{
-              headerShown: false,
-            }}
-          />
-          <Stack.Screen
-            name={'Login Screen'}
-            component={LoginScreen}
-            options={{
-              headerShown: false,
-            }}
-          />
+          name={'Onboarding Swiper'}
+          component={OnboardingSwiper}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name={'Login Screen'}
+          component={LoginScreen}
+          options={{
+            headerShown: false,
+          }}
+        />
           <Stack.Screen
              name={'Login Transition Screen'}
              component={TransitionToLoginScreen}
@@ -40,3 +37,5 @@ const Router = props => {
     </NavigationContainer>
   );
 };
+
+export default Router;

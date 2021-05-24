@@ -1,7 +1,6 @@
 import React from 'react';
 import {Text, Image, StyleSheet, View, TouchableOpacity, ImageBackground} from 'react-native';
 import styles from './styles';
-
 import Onboarding from 'react-native-onboarding-swiper';
 
 const Done = ({...props}) => (
@@ -10,7 +9,7 @@ const Done = ({...props}) => (
     </TouchableOpacity>
 );
 
-const OnboardingScreen = ({navigation}) => {
+const OnboardingSwiper = ({navigation}) => {
     return (
         <Onboarding
             onSkip={() => navigation.navigate('Login Screen')}
@@ -40,4 +39,4 @@ const OnboardingScreen = ({navigation}) => {
     ); 
 };
 
-export default OnboardingScreen;
+export default OnboardingSwiper;

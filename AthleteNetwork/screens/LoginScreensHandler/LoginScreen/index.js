@@ -4,7 +4,7 @@ import styles from './styles';
 
 const LoginScreen = ({navigation}) => {
     return(
-        <ImageBackground source={require('../../assets/athletesloginimg.png')} style={styles.imgBackground}>
+        <ImageBackground source={require('../../../assets/athletesloginimg.png')} style={styles.imgBackground}>
             <SafeAreaView style={styles.firstInputContainer}>
                 <TextInput
                     style={styles.inputText}
