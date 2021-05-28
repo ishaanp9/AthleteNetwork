@@ -18,19 +18,19 @@ const OnboardingSwiper = ({navigation}) => {
             pages={[
                 {
                     backgroundColor: '#fff',
-                    image: <Image style={styles.images} source={require('../../assets/athletesloginimg.png')} />,
+                    image: <Image style={styles.images} source={require('../../../assets/athletesloginimg.png')} />,
                     title: <Text style={styles.title}>Athete Network</Text>,
                     subtitle: <Text style={styles.subtitle} >About Us</Text>,
                 },
                 {
                     backgroundColor: '#fff',
-                    image: <Image style={styles.images} source={require('../../assets/athletesloginimg.png')} />,
+                    image: <Image style={styles.images} source={require('../../../assets/athletesloginimg.png')} />,
                     title: <Text style={styles.title}>Athete Network</Text>,
                     subtitle: <Text style={styles.subtitle} >About Us</Text>,
                 },
                 {
                     backgroundColor: '#fff',
-                    image: <Image style={styles.images} source={require('../../assets/athletesloginimg.png')} />,
+                    image: <Image style={styles.images} source={require('../../../assets/athletesloginimg.png')} />,
                     title: <Text style={styles.title}>Athete Network</Text>,
                     subtitle: <Text style={styles.subtitle} >About Us</Text>,
                 },
