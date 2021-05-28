@@ -52,7 +52,7 @@ const LoginScreen = ({navigation}) => {
             />
           </View>
         </View>
-        <Pressable style={styles.button}>
+        <Pressable style={styles.button} onPress={() => navigation.navigate('Bottom Tab Navigator')}>
           <Text style={{color: 'white', fontWeight: 'bold'}}>Login</Text>
         </Pressable>
         <Text style={{color: 'grey'}}>Or, log in with one of the following options</Text>
@@ -65,7 +65,7 @@ const LoginScreen = ({navigation}) => {
         </View>
         <View style={{flexDirection: 'row'}}>
           <Text>New to AthleteX?</Text>
-          <Pressable>
+          <Pressable onPress={() => navigation.navigate('Signup Screen')}>
             <Text style={{color: 'blue', fontWeight: 'bold'}}> Sign Up </Text>
           </Pressable>
         </View>

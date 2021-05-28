@@ -12,8 +12,8 @@ const Done = ({...props}) => (
 const OnboardingSwiper = ({navigation}) => {
     return (
         <Onboarding
-            onSkip={() => navigation.navigate('Login Screen')}
-            onDone={() => navigation.navigate('Login Screen')}
+            onSkip={() => navigation.navigate('Login Transition Screen')}
+            onDone={() => navigation.navigate('Login Transition Screen')}
             DoneButtonComponent={Done}
             pages={[
                 {

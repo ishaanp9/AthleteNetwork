@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
 import {useState} from "react";
 import {View, Text, ImageBackground, SafeAreaView, Pressable} from 'react-native';
+//import { withNavigation } from 'react-navigation';
 import styles from './stylesTT';
 
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -61,7 +62,7 @@ const PostItem = (props) => {
       <View style={styles.rightContainer}>
 
         <View style={styles.messageContainer}>
-          <Pressable >
+          <Pressable onPress={() => this.props.navigation.navigate('Chat Screen')}>
             <AntDesign name={'message1'} size={40} color='black'/>
           </Pressable>
         </View>
@@ -98,8 +99,9 @@ const PostItem = (props) => {
         <View style={styles.descContainer}>
           <SeeMore 
             numberOfLines={1} style={styles.descriptionText}
-            seeMoreText='see more'
-            seeLessText='see less'
+            linkColor = '#808080'
+            //seeMoreText='see more'
+            //seeLessText='see less'
             >
             {post.description}
           </SeeMore>
