@@ -6,6 +6,7 @@ import {
   SafeAreaView,
   Pressable,
   Image,
+  TouchableOpacity
 } from 'react-native';
 import styles from './styles';
 
@@ -23,11 +24,11 @@ const TransitionToLoginScreen = ({navigation}) => {
       {/* We will need somesort of Image here */}
       <View style={styles.bottomContainer}>
         <Text style={styles.title}>Start your Journey Here!</Text>
-
-        <Pressable style={[styles.button, {backgroundColor: 'blueviolet'}]}>
+        <Pressable style={[styles.button, {backgroundColor: 'blueviolet'}]} onPress={() => navigation.navigate('Signup Screen')}>
           <Text style={[styles.buttonTitle, {color: 'white'}]}>Sign Up</Text>
         </Pressable>
-        <Pressable style={[styles.button, {backgroundColor: 'white', bottom: 20, borderWidth: 1, borderColor: 'blueviolet'}]}>
+        
+        <Pressable onPress={() => navigation.navigate('Login Screen')} style={[styles.button, {backgroundColor: 'white', bottom: 20, borderWidth: 1, borderColor: 'blueviolet'}]}>
           <Text style={styles.buttonTitle}>Sign In</Text>
         </Pressable>
       </View>

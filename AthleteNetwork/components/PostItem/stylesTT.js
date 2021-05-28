@@ -1,8 +1,6 @@
 import {StyleSheet, Dimensions, Platform} from 'react-native';
 
-
 // Tiktok styles
-
 const styles = StyleSheet.create({
   postContainer: {
     width: '100%',

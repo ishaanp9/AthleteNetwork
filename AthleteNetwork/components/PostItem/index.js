@@ -1,6 +1,7 @@
 import React, { useCallback } from 'react';
 import {useState} from "react";
 import {View, Text, ImageBackground, SafeAreaView, Pressable} from 'react-native';
+//import { withNavigation } from 'react-navigation';
 import styles from './stylesTT';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -98,8 +99,9 @@ const PostItem = (props) => {
         <View style={styles.descContainer}>
           <SeeMore 
             numberOfLines={1} style={styles.descriptionText}
-            seeMoreText='see more'
-            seeLessText='see less'
+            linkColor = '#808080'
+            //seeMoreText='see more'
+            //seeLessText='see less'
             >
             {post.description}
           </SeeMore>

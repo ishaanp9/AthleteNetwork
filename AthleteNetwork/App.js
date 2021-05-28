@@ -17,8 +17,7 @@ import TransitionToLoginScreen from './screens/LoginScreensHandler/TransitionToL
 const App = (props) => {
   return (
     <>
-      <LoginScreen/>
-      
+      <Router/> 
     </>
   );
 };
