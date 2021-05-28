@@ -4,7 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import LoginScreen from '../screens/LoginScreensHandler/LoginScreen';
 import TransitionToLoginScreen from '../screens/LoginScreensHandler/TransitionToLoginScreen';
 
-import OnboardingSwiper from '../screens/OnboardingSwiper';
+
 import FeedList from '../screens/FeedList';
 import bottomTabHandler from './bottomTabHandler';
 import OnboardingSwiper from '../screens/LoginScreensHandler/OnboardingSwiper';
@@ -48,13 +48,6 @@ const Router = () => {
         <Stack.Screen
           name={'Login Screen'}
           component={LoginScreen}
-          options={{
-            headerShown: false,
-          }}
-        />
-        <Stack.Screen
-          name={'Login Transition Screen'}
-          component={TransitionToLoginScreen}
           options={{
             headerShown: false,
           }}
