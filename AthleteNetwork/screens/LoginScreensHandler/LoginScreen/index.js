@@ -1,6 +1,8 @@
 import React from 'react';
 import { Text, Image, StyleSheet, TextInput, TouchableOpacity, SafeAreaView, ImageBackground } from 'react-native';
+import { Icon } from 'react-native-vector-icons/Icon';
 import styles from './styles';
+import Fontisto from 'react-native-vector-icons/Fontisto';
 
 const LoginScreen = ({navigation}) => {
     return(

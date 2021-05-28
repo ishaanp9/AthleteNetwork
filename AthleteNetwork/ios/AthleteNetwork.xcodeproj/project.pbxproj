@@ -96,6 +96,14 @@
 			name = AthleteNetwork;
 			sourceTree = "<group>";
 		};
+		1AC12595BDEF4A72AEAD0A29 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +142,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				50E4EFFBEA8F9DEC0A891E2F /* Pods */,
+				1AC12595BDEF4A72AEAD0A29 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
