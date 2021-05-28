@@ -6,10 +6,9 @@ import AddPostScreen from '../screens/AddPostScreen';
 import ExploreScreen from '../screens/ExploreScreen';
 import OpportunitiesScreen from '../screens/OpportunitiesScreen';
 
-import Fontisto from 'react-native-vector-icons/Fontisto';
-import EvilIcons from 'react-native-vector-icons/EvilIcons';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+
+import Icon from 'react-native-vector-icons/MaterialIcons';
+
 
 
 const Tab = createBottomTabNavigator();
@@ -26,7 +25,7 @@ const bottomTabHandler = props => {
         component={FeedList} 
         options={{
           tabBarIcon: ({color}) => (
-            <Fontisto name="home" size={25} color={color} />
+            <Icon name="home" size={25} color={color} />
           ),
         }}
       />
@@ -35,7 +34,7 @@ const bottomTabHandler = props => {
         component={OpportunitiesScreen} 
         options={{
         tabBarIcon: ({color}) => (
-            <MaterialIcons name="business-center" size={25} color={color} />
+            <Icon name="business-center" size={25} color={color} />
         ),
         }}
       />
@@ -44,7 +43,7 @@ const bottomTabHandler = props => {
         component={AddPostScreen} 
         options={{
         tabBarIcon: ({color}) => (
-            <MaterialIcons name="post-add" size={25} color={color} />
+            <Icon name="add-circle" size={30} color={'blueviolet'} />
         ),
         }}
       />
@@ -53,7 +52,7 @@ const bottomTabHandler = props => {
         component={ExploreScreen} 
         options={{
         tabBarIcon: ({color}) => (
-            <MaterialCommunityIcons name="image-search" size={25} color={color} />
+            <Icon name="person-search" size={25} color={color} />
         ),
         }}
       />
@@ -62,7 +61,7 @@ const bottomTabHandler = props => {
         component={ProfileScreen}
         options={{
           tabBarIcon: ({color}) => (
-            <EvilIcons name="user" size={25} color={color} />
+            <Icon name="account-circle" size={25} color={color} />
           ),
         }}
       />

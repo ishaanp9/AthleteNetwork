@@ -3,9 +3,8 @@ import {useState} from "react";
 import {View, Text, ImageBackground, SafeAreaView, Pressable} from 'react-native';
 import styles from './stylesTT';
 
-import AntDesign from 'react-native-vector-icons/AntDesign';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import Fontisto from 'react-native-vector-icons/Fontisto';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import FontAwsome from 'react-native-vector-icons/FontAwesome';
 
 import SeeMore from 'react-native-see-more-inline';
 
@@ -62,32 +61,33 @@ const PostItem = (props) => {
 
         <View style={styles.messageContainer}>
           <Pressable >
-            <AntDesign name={'message1'} size={40} color='black'/>
+            <Icon name={'chat'} size={25} color='black'/>
           </Pressable>
         </View>
 
         <View style={styles.iconHolder}>
           <View style={styles.iconContainer}>
-            <Pressable onPress={onLikePressed}>
-              <AntDesign name={'hearto'} size={40} color={isLiked ? 'red' : 'black'}/>
+            <Pressable onPress={() => console.log('This has been pressed')}>
+              <Icon name={'favorite-border'} size={25} color={isLiked ? 'red' : 'black'}/>
             </Pressable>
             <Text style={styles.statNum}>{post.likes}</Text>
           </View>
 
           <View style={styles.iconContainer}>
             <Pressable onPress={onCommentPressed}>
-              <FontAwesome name={'commenting'} size={40} color={isCommented ? 'red' : 'black'}/>
+              <Icon name={'comment'} size={25} color={isCommented ? 'red' : 'black'}/>
             </Pressable>
             <Text style={styles.statNum}>{post.comments}</Text>
           </View>
 
           <View style={styles.iconContainer}>
-            <FontAwesome name={'retweet'} size={40} color="black"/>
+            <FontAwsome name={'retweet'} size={25} color="black"/>
             <Text style={styles.statNum}>{post.reposts}</Text>
           </View>
 
           <View style={styles.iconContainer}>
-            <Fontisto name={'share-a'} size={40} color="black"/>
+            <Icon name={'share'} size={25} color="black"/>
+            <Text style={styles.statNum}>Share</Text>
           </View>
       </View>   
     </View>

@@ -1,6 +1,6 @@
 export default [{
     id: 12345,
-    username: 'Athlete Network',
+    username: '@ishaanp9',
     description: 'We are AthleteNetwork. We connect athletes to different opportunities to make money, such as sponsors, endorsements, and agents.',
     //descriptionNeedsExpanded: (description.lenth > 15) ? true : false,
     image: require('../../assets/athletesloginimg.png'),
