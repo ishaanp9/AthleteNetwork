@@ -2,7 +2,7 @@ import React from 'react';
 import { View, FlatList, Text, Image, Stylesheet, Pressable, SafeAreaView } from 'react-native';
 import styles from './styles';
 
-const SearchScreen = props => {
+const ExploreScreen = props => {
     return (
         <SafeAreaView>
             <Text>Hello</Text>
@@ -10,4 +10,4 @@ const SearchScreen = props => {
     );
 }
 
-export default SearchScreen;
+export default ExploreScreen;
