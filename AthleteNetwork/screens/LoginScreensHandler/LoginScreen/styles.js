@@ -1,57 +1,79 @@
-import { StyleSheet, Dimensions } from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 
 const styles = StyleSheet.create({
-  iconContainer: {
-      alignItems: 'center',
-  },
-  imgBackground: {
-    alignItems: 'center',
-    width: '100%',
-    height: '100%',
-  },
-  inputText: {
-      width: Dimensions.get('window').width - 50,
-      borderRadius: 25,
-      height: Dimensions.get('window').height / 20,
-      borderWidth: 1,
-      fontSize: 20,
-      marginHorizontal: 25,
-      paddingLeft: 20,
-      backgroundColor: '#FFEFFF',
-  },
-  firstInputContainer: {
-    marginTop: Dimensions.get('window').height / 2 + 50,
-  },
-  secondInputContainer: {
-    marginTop: 15,
-},
-  loginButton: {
-    width: Dimensions.get('window').width - 50,
-    borderRadius: 25,
-    height: Dimensions.get('window').height / 20,
-    borderWidth: 1,
-    marginHorizontal: 25,
-    backgroundColor: '#E0BBE4',
-    marginTop: 20,
+  container: {
     justifyContent: 'center',
+    alignItems: 'center',
   },
-  btnText: {
-      fontSize: 16,
-      textAlign: 'center',
+  topContainer: {
+    width: '100%',
+    height: '30%' ,
   },
-  newAcc: {
-      marginTop: 20,
+  image: {
+    top: 30,
+    resizeMode: 'contain',
+    width: '100%',
+    height: '90%',
+    position: 'absolute',
   },
-  newAccText: {
-      color: 'blue',
-      fontStyle: 'italic',
-      textDecorationLine: 'underline',
-      fontSize: 15,
-      borderWidth: 1,
-      borderRadius: 10,
-      paddingHorizontal: 15,
-      backgroundColor: 'white',
-  }
+  bottomContainer: {
+    width: '100%',
+    height: '70%',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    
+  },
+  title: {
+    fontWeight: 'bold',
+    fontSize: 22,
+    color: 'blueviolet',
+    marginRight: '60%',
+  },
+  header: {
+    fontWeight: 'bold',
+    fontSize: 12,
+    color: 'blueviolet',
+    marginLeft: '10%',
+    marginBottom: 5,
+    
+  },
+  textInputContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-evenly',
+    
+  },
+  textInput: {
+    borderWidth: 1,
+    borderColor: 'blueviolet',
+    borderRadius: 10,
+    padding: 5,
+    width: '87%',
+  },
+  button: {
+    backgroundColor: 'blueviolet',
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '90%',
+    height: '10%',
+  },
+  authRow: {
+    flexDirection: 'row',
+    
+  },
+  authButton: {
+    borderWidth: 0.8,
+    borderColor: 'blueviolet',
+    borderRadius: 10,
+    paddingVertical: 3,
+    paddingHorizontal: 15,
+    marginHorizontal: '5%',
+  },
+  logos: {
+    width: 30,
+    height: 30,
+  },
 });
 
 export default styles;
