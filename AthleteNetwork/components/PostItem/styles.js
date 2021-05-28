@@ -1,5 +1,7 @@
 import {StyleSheet, Dimensions} from 'react-native';
 
+
+//Instagram clone styles
 const styles = StyleSheet.create({
   postContainer: {
     width: '100%',

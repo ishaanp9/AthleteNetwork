@@ -1,5 +1,6 @@
 import {StyleSheet, Dimensions, Platform} from 'react-native';
 
+// Tiktok styles
 const styles = StyleSheet.create({
   postContainer: {
     width: '100%',
@@ -16,9 +17,11 @@ const styles = StyleSheet.create({
     ...Platform.select({
         ios: {
           zIndex: 10
+          
         },
         android: {
-          elevation: 10
+          elevation: 10,
+          // borderTopWidth: 0,
         },
         default: {
           zIndex: 10
@@ -34,15 +37,19 @@ const styles = StyleSheet.create({
   iconHolder: {
     alignSelf: 'flex-end',
     height: Dimensions.get('window').height / 2.5,
-    justifyContent: 'space-between',
+    justifyContent: 'center',
+    padding: 5,
     position: 'absolute',
-    marginTop: Dimensions.get('window').height / 2.5
+    marginTop: Dimensions.get('window').height / 2.5,
+    //elevation: 10,
   },
   iconContainer: {
     alignItems: 'center',
+    marginVertical: 5,
+    elevation: 10,
   },
   statNum: {
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: '400',
   },
   textContainer: {
@@ -52,18 +59,18 @@ const styles = StyleSheet.create({
     width: '100%',
   },
   usernameText: {
-    ...Platform.select({
-        ios: {
-          zIndex: 10
-        },
-        android: {
-          elevation: 10
-        },
-        default: {
-          zIndex: 10
-        }
-    }),
-    fontSize: 24,
+    // ...Platform.select({
+    //     ios: {
+    //       zIndex: 10
+    //     },
+    //     android: {
+    //       elevation: 10,
+    //     },
+    //     default: {
+    //       zIndex: 10
+    //     }
+    // }),
+    fontSize: 15,
     fontWeight: 'bold',
     paddingLeft: 15,
   },
