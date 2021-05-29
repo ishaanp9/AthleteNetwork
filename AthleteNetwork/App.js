@@ -12,9 +12,7 @@ import React from 'react';
 import { Text, View, SafeAreaView, StyleSheet } from 'react-native';
 import Router from './navigation/router';
 import ChatScreen from './screens/ChatScreen';
-import LoginScreen from './screens/LoginScreensHandler/LoginScreen';
 import TransitionToLoginScreen from './screens/LoginScreensHandler/TransitionToLoginScreen';
-import FeedList from './screens/FeedList';
 import VideoPostItem from './components/VideoPostItem';
 
 
