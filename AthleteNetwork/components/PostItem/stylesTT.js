@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   messageContainer: {
     alignSelf: 'flex-end',
     position: 'absolute',
-    marginTop: 50,
+    marginTop: Dimensions.get('window').height / 10,
   },
   iconHolder: {
     alignSelf: 'flex-end',
