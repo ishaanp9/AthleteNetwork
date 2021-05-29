@@ -6,7 +6,6 @@
 //npm install --save react-native-see-more-inline
 //npm add react-native-text-size
 //npm install react-native-elements
-//npm install react-navigation
 
 import React from 'react';
 import { Text, View, SafeAreaView, StyleSheet } from 'react-native';
@@ -15,13 +14,10 @@ import ChatScreen from './screens/ChatScreen';
 import TransitionToLoginScreen from './screens/LoginScreensHandler/TransitionToLoginScreen';
 import VideoPostItem from './components/VideoPostItem';
 
-
 const App = (props) => {
   return (
     <>
-      {/* <Router/>  */}
-      {/* <ChatScreen/> */}
-      <VideoPostItem/>
+      <Router/> 
     </>
   );
 };
