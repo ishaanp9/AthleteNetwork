@@ -8,7 +8,7 @@ import FeedList from '../screens/FeedList';
 import bottomTabHandler from './bottomTabHandler';
 import OnboardingSwiper from '../screens/LoginScreensHandler/OnboardingSwiper';
 import ChatScreen from '../screens/ChatScreen';
-import SignupScreen from '../screens/LoginScreensHandler/SignupScreen';
+// import SignupScreen from '../screens/LoginScreensHandler/SignupScreen';
 
 
 const Stack = createStackNavigator();
@@ -31,13 +31,13 @@ const Router = () => {
             headerShown: false,
           }}
         />
-        <Stack.Screen
+        {/* <Stack.Screen
           name={'Signup Screen'}
           component={SignupScreen}
           options={{
             headerShown: false,
           }}
-        />
+        /> */}
         <Stack.Screen
           name={'Login Screen'}
           component={LoginScreen}
