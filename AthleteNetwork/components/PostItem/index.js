@@ -1,5 +1,7 @@
-import React, { useCallback, useState } from 'react';
-import {View, Text, ImageBackground, SafeAreaView, Pressable, Image} from 'react-native';
+import React, { useCallback } from 'react';
+import {useState} from "react";
+import {View, Text, ImageBackground, SafeAreaView, Pressable} from 'react-native';
+//import { withNavigation } from 'react-navigation';
 import styles from './stylesTT';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -10,8 +12,7 @@ import SeeMore from 'react-native-see-more-inline';
 
 const PostItem = (props) => {
   const [post, setPost] = useState(props.post);
-  //const descriptionExpanded = props.descriptionExpanded;
-  navigation = props.navigation;
+  const descriptionExpanded = props.descriptionExpanded;
   const [isLiked, setIsLiked] = useState(false);
   const [isCommented, setIsCommented] = useState(false);
   const [textShown, setTextShown] = useState(true);
@@ -59,11 +60,11 @@ const PostItem = (props) => {
 
       <View style={styles.rightContainer}>
 
-        {/* <View style={styles.messageContainer}>
-          <Pressable onPress={() => navigation.navigate('Chat Screen')}>
+        <View style={styles.messageContainer}>
+          <Pressable >
             <Icon name={'chat'} size={25} color='black'/>
           </Pressable>
-        </View> */}
+        </View>
 
         <View style={styles.iconHolder}>
           <View style={styles.iconContainer}>
