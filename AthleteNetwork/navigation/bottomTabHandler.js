@@ -1,6 +1,7 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import FeedList from '../screens/FeedList';
+//import PublicFeedList from '../screens/PublicFeedList';
+import feedTabHandler from './feedTabHandler';
 import ProfileScreen from '../screens/ProfileScreen';
 import AddPostScreen from '../screens/AddPostScreen';
 import ExploreScreen from '../screens/ExploreScreen';
@@ -14,15 +15,25 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 const Tab = createBottomTabNavigator();
 
 const bottomTabHandler = props => {
+
+
   return (
-    <Tab.Navigator screenOptions={{
-      tabBarLabel: () => {
-        return null;
-      },
-    }}>
+    <Tab.Navigator 
+      tabBarOptions={{
+        showLabel: false,
+        // style: {
+        //   //backgroundColor: 'transparent',
+        //   borderTopWidth: 0,
+        //   position: 'absolute',
+        //   left: 0,
+        //   right: 0,
+        //   //height: 50,
+        // }
+      }}
+    >
       <Tab.Screen
         name={'Feed'}// we can change the name later
-        component={FeedList} 
+        component={feedTabHandler} 
         options={{
           tabBarIcon: ({color}) => (
             <Icon name="home" size={25} color={color} />

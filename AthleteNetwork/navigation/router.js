@@ -4,7 +4,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import LoginScreen from '../screens/LoginScreensHandler/LoginScreen';
 import TransitionToLoginScreen from '../screens/LoginScreensHandler/TransitionToLoginScreen';
 
-import FeedList from '../screens/FeedList';
+import PublicFeedList from '../screens/PublicFeedList';
 import bottomTabHandler from './bottomTabHandler';
 import OnboardingSwiper from '../screens/LoginScreensHandler/OnboardingSwiper';
 import ChatScreen from '../screens/ChatScreen';
@@ -16,7 +16,7 @@ const Stack = createStackNavigator();
 const Router = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName={'Onboarding Swiper'}>
         <Stack.Screen
           name={'Onboarding Swiper'}
           component={OnboardingSwiper}
@@ -53,8 +53,8 @@ const Router = () => {
           }}
         />
         <Stack.Screen
-          name={'Feed List'}
-          component={FeedList}
+          name={'Public Feed List'}
+          component={PublicFeedList}
           options={{
             headerShown: false,
           }}

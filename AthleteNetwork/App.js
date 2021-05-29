@@ -6,6 +6,7 @@
 //npm install --save react-native-see-more-inline
 //npm add react-native-text-size
 //npm install react-native-elements
+//npm install react-navigation
 
 import React from 'react';
 import { Text, View, SafeAreaView, StyleSheet } from 'react-native';

@@ -1,13 +1,86 @@
 import React from 'react';
-import { View, FlatList, Text, Image, Stylesheet, Pressable, SafeAreaView } from 'react-native';
+import {
+  Text,
+  Image,
+  StyleSheet,
+  TextInput,
+  SafeAreaView,
+  ImageBackground,
+  KeyboardAvoidingView,
+  Pressable,
+  View,
+} from 'react-native';
 import styles from './styles';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 
-const SignupScreen = props => {
-    return (
-        <SafeAreaView>
-            <Text>Add Post Screen</Text>
-        </SafeAreaView>
-    );
+const SignupScreen = ({navigation}) => {
+    const AuthenticationOptions = props => (
+        <Pressable style={styles.authButton}>
+          <Image style={styles.logos} source={props.asset} />
+        </Pressable>
+      );
+    
+      return (
+        <KeyboardAvoidingView style={styles.container}>
+          {/* //need to make a styles above */}
+          {/* <View style={styles.topContainer}>
+            <Image
+              style={styles.image}
+              source={require('../../../assets/daddydk.png')}
+            />
+          </View> */}
+          {/* Top
+            Image */}
+          <View style={styles.bottomContainer}>
+            <Text style={styles.title}>Sign Up</Text>
+            <View>
+              <Text style={styles.header}>Email</Text>
+              <View style={styles.textInputContainer}>
+                <Icon name="mail-outline" color={'blueviolet'} size={25} />
+                <TextInput
+                  style={[styles.textInput, {marginBottom: 10}]}
+                  placeholder="johndoe@gmail.com"
+                />
+              </View>
+              <Text style={[styles.header]}>Password</Text>
+              <View style={styles.textInputContainer}>
+                <Icon name="lock-outline" color={'blueviolet'} size={25} />
+                <TextInput
+                  style={[styles.textInput, {marginBottom: 10}]}
+                  secureTextEntry={true}
+                  placeholder="Pick a Strong Password"
+                />
+              </View>
+              <Text style={[styles.header]}>Confirm</Text>
+              <View style={styles.textInputContainer}>
+                <Icon name="lock-outline" color={'blueviolet'} size={25} />
+                <TextInput
+                  style={styles.textInput}
+                  secureTextEntry={true}
+                  placeholder="Confirm Your Password"
+                />
+              </View>
+            </View>
+            <Pressable style={styles.button} onPress={() => navigation.navigate('Bottom Tab Navigator')}>
+              <Text style={{color: 'white', fontWeight: 'bold'}}>Sign Up</Text>
+            </Pressable>
+            <Text style={{color: 'grey'}}>Or, sign in with one of the following options</Text>
+            <View style={styles.authRow}>
+              <AuthenticationOptions
+                asset={require('../../../assets/google.png')}
+              />
+              <AuthenticationOptions asset={require('../../../assets/insta.png')} />
+              <AuthenticationOptions asset={require('../../../assets/apple.png')} />
+            </View>
+            {/* <View style={{flexDirection: 'row'}}>
+              <Text>New to AthleteX?</Text>
+              <Pressable onPress={() => navigation.navigate('Signup Screen')}>
+                <Text style={{color: 'blue', fontWeight: 'bold'}}> Sign Up </Text>
+              </Pressable>
+            </View> */}
+          </View>
+        </KeyboardAvoidingView>
+      );
 }
 
 export default SignupScreen;
